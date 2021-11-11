@@ -1,23 +1,100 @@
-.App {
-  text-align: center;
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0;
+  padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+  background-image:linear-gradient(to right,#2e495f,#348bcc) ;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  display: flex;
+  color: white;
+  flex-direction: column;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header input{
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border:1px solid #4ca8ee;
+  font-size: 18px;
+  padding-left: 20px;
+}
+.header button{
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 20px;
+  border:none;
+  background-color: teal;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+.header button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.display{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+}
+.entry{
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.front{
+  width: 300px;
+  height: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: red solid;
+  margin-top: 50px;
+}
+.front img{
+  width: 250px;
+  height: 250px;
+}
+.front h2{
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.front button{
+  width: 100px;
+  height: 35px;
+  background-color:teal;
+  color: white;
+  font-size: 20px;
+  border:none;
+  transition: all 0.5s ease;
+  border-radius: 20px;
+}
+.front button:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.back{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 375px;
+  align-items: center;
+  border: red solid;
+  margin-top: 50px;
+}
+.back h3{
+  margin-top: 10px;
+  font-size: 25px;
 }
